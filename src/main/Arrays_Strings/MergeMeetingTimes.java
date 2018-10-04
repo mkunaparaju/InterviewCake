@@ -1,4 +1,6 @@
-package Arrays_Strings.main;
+package main.Arrays_Strings;
+
+import main.PrintingHelper;
 
 import java.util.ArrayList;
 import java.util.Arrays;

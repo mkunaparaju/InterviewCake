@@ -1,4 +1,4 @@
-package Arrays_Strings.main;
+package main.Arrays_Strings;
 
 public class SingleRiffleShuffle {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Arrays_Strings.HashMapImplementation;
+package main.HashMapImplementation;
 
 
 //Bonus
