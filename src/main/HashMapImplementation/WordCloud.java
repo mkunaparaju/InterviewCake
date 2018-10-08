@@ -16,6 +16,7 @@ public class WordCloud {
     private static HashMap getWordCloud(String input) {
         HashMap<String, Integer> stringMap = new HashMap<>();
 
+        //regex is bad for A GOOD TIME CONSTRAIN. CONSIDER doing your own splitting and parsing.
         input.replaceAll("\\p{Punct}","");
         input.toLowerCase();
         String [] words = input.split(" ");
