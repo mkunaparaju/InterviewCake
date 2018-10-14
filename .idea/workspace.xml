@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f50d08a4-0a5a-42a7-92dc-9dad912835d1" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/TreesGraphs/MeshMessageImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/TreesGraphs/SuperBalancedBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/TreesGraphs/SuperBalancedBinaryTree.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -54,15 +54,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SingleRiffleShuffle.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Arrays_Strings/SingleRiffleShuffle.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="WordCloud.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/HashMapImplementation/WordCloud.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -96,11 +87,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SuperBalancedBinaryTree.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SuperBalancedBinaryTree.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/TreesGraphs/SuperBalancedBinaryTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+            <state relative-caret-position="205">
+              <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MeshMessageImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/TreesGraphs/MeshMessageImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -208,6 +211,7 @@
         <option value="$PROJECT_DIR$/src/main/TreesGraphs/BuildBinaryTree.java" />
         <option value="$PROJECT_DIR$/src/main/TreesGraphs/BuildTree.java" />
         <option value="$PROJECT_DIR$/src/main/TreesGraphs/SuperBalancedBinaryTree.java" />
+        <option value="$PROJECT_DIR$/src/main/TreesGraphs/MeshMessageImpl.java" />
       </list>
     </option>
   </component>
@@ -230,8 +234,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -275,6 +277,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -302,7 +306,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SuperBalancedBinaryTree">
+  <component name="RunManager" selected="Application.MeshMessageImpl">
     <configuration name="CountingSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.HashMapImplementation.CountingSort" />
       <module name="InterviewCake" />
@@ -314,13 +318,13 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="InFlightEntertainment" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Arrays_Strings.HashMapImplementation.InFlightEntertainment" />
+    <configuration name="MeshMessageImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.TreesGraphs.MeshMessageImpl" />
       <module name="InterviewCake" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Arrays_Strings.HashMapImplementation.*" />
+          <option name="PATTERN" value="main.TreesGraphs.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -409,19 +413,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.InFlightEntertainment" />
       <item itemvalue="Application.PermutationPalindrome" />
       <item itemvalue="Application.WordCloud" />
       <item itemvalue="Application.CountingSort" />
       <item itemvalue="Application.SuperBalancedBinaryTree" />
+      <item itemvalue="Application.MeshMessageImpl" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MeshMessageImpl" />
         <item itemvalue="Application.SuperBalancedBinaryTree" />
         <item itemvalue="Application.CountingSort" />
         <item itemvalue="Application.WordCloud" />
         <item itemvalue="Application.PermutationPalindrome" />
-        <item itemvalue="Application.InFlightEntertainment" />
       </list>
     </recent_temporary>
   </component>
@@ -438,12 +442,12 @@
       <workItem from="1537968427557" duration="1102000" />
       <workItem from="1538056192632" duration="2627000" />
       <workItem from="1538835711491" duration="5244000" />
-      <workItem from="1539086723087" duration="1201000" />
+      <workItem from="1539086723087" duration="4076000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17959000" />
+    <option name="totallyTimeSpent" value="20834000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="797" extended-state="6" />
@@ -459,11 +463,11 @@
       <window_info anchor="right" id="Maven Projects" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32952926" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32714286" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32714286" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.18884121" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18884121" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -812,8 +816,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/TreesGraphs/SuperBalancedBinaryTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        <state relative-caret-position="205">
+          <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/TreesGraphs/MeshMessageImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
