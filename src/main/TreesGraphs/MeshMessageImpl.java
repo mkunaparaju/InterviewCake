@@ -10,6 +10,9 @@ public class MeshMessageImpl {
     public static void main(String[] args) {
         Queue<String> trial  = new LinkedList<>();
         boolean isEmpty = isEmpty(trial);
+    }
 
+    private static boolean isEmpty(Queue<String> trial) {
+        return false;
     }
 }
