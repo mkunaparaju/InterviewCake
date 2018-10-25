@@ -12,14 +12,14 @@ public class MergeMeetingTimes {
 
     public static void main(String[] args) {
         // setup Done here
-        Meeting [] meetings = { new Meeting(0, 1), new Meeting(3, 5), new Meeting(4, 8), new Meeting(10, 12), new Meeting(9, 10)};
+        Meeting[] meetings = {new Meeting(0, 1), new Meeting(3, 5), new Meeting(4, 8), new Meeting(10, 12), new Meeting(9, 10)};
         //Meeting [] meetings = {new Meeting(1, 2), new Meeting(2, 3)};
         //  Meeting [] meetings = {new Meeting(1, 5), new Meeting(2, 3)};
         //Meeting[] meetings = {new Meeting(1, 10), new Meeting(2, 6), new Meeting(3, 5), new Meeting(7, 9)};
         MergeMeetingTimes merge = new MergeMeetingTimes();
 
         PrintingHelper printingHelper = new PrintingHelper();
-       // printingHelper.printArray(merge.mergeMeetings(meetings));
+        // printingHelper.printArray(merge.mergeMeetings(meetings));
         ArrayList<Meeting> listOfMeetings = new ArrayList(Arrays.asList(meetings));
         printingHelper.printList(merge.mergeSorted(listOfMeetings));
         //merge.mergeMeetings(meetings);
@@ -29,12 +29,12 @@ public class MergeMeetingTimes {
         ArrayList<Meeting> sorted = new ArrayList<Meeting>(meetings);
         Collections.sort(sorted);
         int i = 1;
-        while(i < sorted.size()){
-            Meeting prev = sorted.get(i-1);
+        while (i < sorted.size()) {
+            Meeting prev = sorted.get(i - 1);
             Meeting present = sorted.get(i);
 
-            if(prev.getEndTime() >= present.getStartTime()){
-                prev.setEndTime((prev.getEndTime() > present.getEndTime())? prev.getEndTime() : present.getEndTime());
+            if (prev.getEndTime() >= present.getStartTime()) {
+                prev.setEndTime((prev.getEndTime() > present.getEndTime()) ? prev.getEndTime() : present.getEndTime());
                 sorted.remove(present);
                 continue;
             }
@@ -103,7 +103,7 @@ public class MergeMeetingTimes {
     }
 }
 
-class Meeting implements Comparable<Meeting>{
+class Meeting implements Comparable<Meeting> {
 
     private int startTime;
     private int endTime;
