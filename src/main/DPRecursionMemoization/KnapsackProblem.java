@@ -19,7 +19,8 @@ public class KnapsackProblem {
 
     private static int getMaxValue(Item[] items, int maxWt) {
        // return getMaxValueBrute(items,maxWt, 0);
-        return getMaxValueMemoization(items,maxWt, 0);
+//        return getMaxValueMemoization(items,maxWt, 0);
+        return getMaxValueTopDown(items, maxWt);
     }
 
     private static int getMaxValueBrute(Item[] items, int maxWt, int i) {
@@ -49,7 +50,20 @@ public class KnapsackProblem {
         return toReturn;
 
     }
-    
+
+    private static int getMaxValueTopDown(Item [] items, int maxWt){
+        int [][] cache = new int [items.length + 1][ maxWt + 1];
+        for (int i = 1 ; i <= items.length ; i ++){
+            for (int j = 0; j <= maxWt; j ++){
+                if(j < items[i-1].getWeight()) cache[i][j] = cache[i-1][j];
+                else{
+                    cache[i][j] = Math.max(cache[i-1][j-items[i-1].getWeight()] + items[i-1].getValue(), cache[i-1][j]);
+                }
+            }
+
+        }
+        return cache[items.length][maxWt];
+    }
 }
 
 class Item{
