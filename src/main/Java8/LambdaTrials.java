@@ -1,8 +1,12 @@
 package main.Java8;
 
-import java.util.Comparator;
-import java.util.ConcurrentModificationException;
+import java.util.*;
 import java.util.function.Consumer;
+import java.util.stream.Stream;
+
+import static java.util.stream.Collectors.collectingAndThen;
+import static java.util.stream.Collectors.joining;
+import static java.util.stream.Collectors.toCollection;
 
 public class LambdaTrials {
 
@@ -19,6 +23,16 @@ public class LambdaTrials {
 
         Consumer<String> c1 = msg -> System.out.println(msg.length());
             
+
+        Random random = new Random();
+        Stream<Integer> rands = Stream.generate(random::nextInt);
+        rands.filter(n -> n>0).map(n -> n/10).limit(10).forEach(System.out::println);
+
+        String [] book = {"hello","world","today", "world", "when", "who", "wht", "why", "when"};
+        Arrays.stream(book).distinct().forEach(System.out::println);
+
+        
+
 
     }
 
