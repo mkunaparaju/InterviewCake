@@ -1,8 +1,6 @@
 package main.TreesGraphs;
 
-import main.PrintingHelper;
-
-import java.util.ArrayList;
+import javax.xml.soap.Node;
 import java.util.HashSet;
 
 
@@ -16,19 +14,30 @@ public class SuperBalancedBinaryTree {
         BinaryTreeNode node = tree.buildBinaryTree(arr);
 
 
-
-        getDepths(node,0);
-        System.out.println(leafDepthSet.size() + new ArrayList<>(leafDepthSet).get(0));
     }
 
-    private static void getDepths(BinaryTreeNode node, int depth) {
-        if(node.left == null && node.right == null) {
-            leafDepthSet.add(depth);
-        }
+    boolean isSuperBalancedRecursive(BinaryTreeNode root, Height ht){
+        Height lheight = new Height();
+        Height rheight = new Height();
 
-        System.out.println(depth);
-        depth++;
-        if(node.left != null) getDepths(node.left, depth);
-        if(node.right != null) getDepths(node.right, depth);
+        boolean l = isSuperBalancedRecursive(root.left, lheight);
+        boolean r = isSuperBalancedRecursive(root.right, rheight);
+
+        int lh = lheight.height;
+        int rh = rheight.height;;
+
+        ht.height = (lh>rh)? lh : rh + 1;
+
+        if(Math.abs(lh-rh) > 1) return false;
+        else return l&r;
     }
+
+    boolean isSuperBalancedIterative(BinaryTreeNode root){
+        return false;
+    }
+
+}
+
+class Height{
+    int height = 0;
 }
