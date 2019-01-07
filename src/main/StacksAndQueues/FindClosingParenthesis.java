@@ -23,6 +23,8 @@ public class FindClosingParenthesis {
                 openIndex--;
             }
         }
+
+
         if(pos == -1) throw new IllegalArgumentException("no closing parenthesis");
         return pos;
     }

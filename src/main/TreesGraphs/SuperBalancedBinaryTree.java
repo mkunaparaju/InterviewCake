@@ -38,7 +38,7 @@ public class SuperBalancedBinaryTree {
 
     boolean isSuperBalancedIterative(BinaryTreeNode root) {
         List<Integer> depths = new ArrayList<Integer>();
-        ArrayDeque<NodeDepthPair> stack = new ArrayDeque<>();
+        ArrayDeque<NodeDepthPair>  stack = new ArrayDeque<>();
         if (root == null) return true;
         stack.push(new NodeDepthPair(root, 0));
 
