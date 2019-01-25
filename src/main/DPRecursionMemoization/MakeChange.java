@@ -3,6 +3,7 @@ package main.DPRecursionMemoization;
 import java.util.Arrays;
 import java.util.HashMap;
 
+//number of min coins required to make change for the given amount
 public class MakeChange {
 
     static HashMap<String , Integer > memoMap = new HashMap<>();
@@ -11,9 +12,9 @@ public class MakeChange {
         int [] denoms = {1,5,10, 25};
         int [] cache = new int[50];
         Arrays.fill(cache, -1);
-//        System.out.println(makeChangeRecursive(49, denoms));
+        System.out.println(makeChangeRecursive(49, denoms));
 //        System.out.println(makeChangeMemoization(49, denoms, cache));
-        System.out.println(makeChangeTopDown(49,denoms));
+//        System.out.println(makeChangeTopDown(49,denoms));
     }
 
     private static int makeChangeTopDown(int amount, int[] denoms) {
