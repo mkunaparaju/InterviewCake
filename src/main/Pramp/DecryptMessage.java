@@ -18,7 +18,7 @@ public class DecryptMessage {
                 //ystem.out.println(" valOfMultiple " + (int)valOfMultiple) ;
                 if(valOfMultiple >= 97) break;
             }
-            original = original + (charrr)(valOfMultiple);
+            original = original + (char)(valOfMultiple);
             System.out.println("valsAtStep2 " + (int)valAtStep2 + " valOfMultiple " + (int)valOfMultiple) ;
             valAtStep2 = (char)(valOfMultiple + valAtStep2);
 
