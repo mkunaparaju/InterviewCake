@@ -27,7 +27,6 @@ public class SuperBalancedBinaryTree {
 
         int lh = lheight.height;
         int rh = rheight.height;
-        ;
 
         ht.height = (lh > rh) ? lh : rh + 1;
 
