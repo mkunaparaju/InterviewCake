@@ -16,7 +16,7 @@ public class InPlaceShuffle {
         if (arr.length < 1) throw new IllegalArgumentException("cannot shuffle array with only one element");
         for (int i = 0 ; i < arr.length - 1; i ++)   {
             int temp = arr[i];
-            int randIndex = getRandom(i+1, arr.length -1 );
+            int randIndex = getRandom(i, arr.length -1 );
             arr[i] = arr[randIndex];
             arr[randIndex] = temp;
         }
