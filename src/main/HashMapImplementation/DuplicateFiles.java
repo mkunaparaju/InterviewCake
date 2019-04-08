@@ -60,6 +60,21 @@ class FilePaths {
     public Path getOriginalPath() {
         return originalPath;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        FilePaths filePaths = (FilePaths) o;
+        return Objects.equals(duplicatePath, filePaths.duplicatePath) &&
+                Objects.equals(originalPath, filePaths.originalPath);
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(duplicatePath, originalPath);
+    }
 }
 
 class FileInfo {

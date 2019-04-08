@@ -8,6 +8,32 @@ package main.HashMapImplementation;
 
 //https://www.interviewcake.com/question/java/inflight-entertainment?course=fc1&section=hashing-and-hash-tables
 
+import java.util.HashSet;
+
 //Solve for these in Round 2
 public class InFlightBonus {
+    public static void main(String[] args) {
+        int flightTime = 120;
+        int [] mLength = {30, 90,42};
+
+        System.out.println(areMoviesAvailable(flightTime, mLength));
+
+    }
+
+    private static boolean areMoviesAvailable(int flightTime, int[] mLength) {
+        HashSet<Integer> complement =new HashSet<>();
+
+        for(int movie : mLength){
+            //checking to see if second movie exists
+            if(complement.contains(movie)){
+                return true;
+            }
+            //adding complement of that movie which is second movie
+            else{
+                complement.add(flightTime - movie);
+            }
+        }
+
+        return false;
+    }
 }

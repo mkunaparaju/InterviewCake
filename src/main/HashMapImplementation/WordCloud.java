@@ -3,6 +3,7 @@ package main.HashMapImplementation;
 import main.PrintingHelper;
 
 import java.util.HashMap;
+import java.util.List;
 
 public class WordCloud {
 
@@ -31,5 +32,16 @@ public class WordCloud {
             }
         }
         return stringMap;
+    }
+
+    private static HashMap<String, Integer> getWordCloud(List<String> sentences){
+        HashMap<String,Integer> wordCloud = new HashMap<>();
+
+        for(String sent : sentences){
+            String [] words = sent.split(" ");
+
+        }
+
+        return wordCloud;
     }
 }
