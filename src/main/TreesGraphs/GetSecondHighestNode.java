@@ -14,28 +14,44 @@ public class GetSecondHighestNode {
         tree.root.left.right = new BinaryTreeNode(3);
 
         GetSecondHighestNode get = new GetSecondHighestNode();
-        BinaryTreeNode second = get.getSecondHighest(tree.root, null);
+        BinaryTreeNode second = get.getSecondHighest(tree.root);
         System.out.println( second.value);
     }
 
-    BinaryTreeNode getSecondHighest(BinaryTreeNode root, BinaryTreeNode parent){
-        if (root == null) return null;
+//    BinaryTreeNode getSecondHighest(BinaryTreeNode root, BinaryTreeNode parent){
+//        if (root == null) return null;
+//
+//        if(root.right != null ){
+//            parent = root;
+//            root = root.right;
+//            System.out.println("root" + root.value +  " parent " + parent.value );
+//            return getSecondHighest(root, parent);
+//
+//        }
+//
+//        else if(root.right == null && root.left == null) {
+//            return parent;
+//        }
+//
+//        else{
+//            return getHighest(root.left);
+//        }
+//    }
 
-        if(root.right != null ){
-            parent = root;
-            root = root.right;
-            System.out.println("root" + root.value +  " parent " + parent.value );
-            return getSecondHighest(root, parent);
-
+    BinaryTreeNode getSecondHighest(BinaryTreeNode root){
+        if(root == null) return null;
+        BinaryTreeNode secHigh = null;
+        if(root.right == null) secHigh = getHighest(root.left);
+        if(root.right.right == null) {
+            if(root.right.left == null) secHigh = root;
+            else{
+                secHigh = getHighest(root.right.left);
+            }
         }
-
-        else if(root.right == null && root.left == null) {
-            return parent;
-        }
-
         else{
-            return getHighest(root.left);
+            secHigh = root.right;
         }
+        return secHigh;
     }
 
     private BinaryTreeNode getHighest(BinaryTreeNode node) {
